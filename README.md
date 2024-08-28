@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# SPA "Single Page Application" com React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descrição
 
-## Available Scripts
+Este projeto envolve a criação de uma arquitetura SPA (Single Page Application) utilizando o framework React. A aplicação consome dados da API do [TheMovieDB](https://developer.themoviedb.org/reference/movie-details) para renderizar informações sobre filmes.
 
-In the project directory, you can run:
+Essa atividade faz parte do conteúdo apresentado na disciplina de **Arquitetura de FrontEnd** do curso de Pós-Graduação em Engenharia de Software promovido pela Pontifícia Universidade de Minas Gerais (PUC Minas).
 
-### `npm start`
+## Tecnologias Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React**: Framework JavaScript para construção de interfaces de usuário.
+- **CSS-in-JS**: Técnica de estilização onde o JavaScript é usado para criar e gerenciar estilos de forma declarativa e sustentável.
+- **React Router**: Biblioteca para roteamento interno em aplicações React.
+- **Styled Components**: Biblioteca para escrever CSS diretamente dentro dos arquivos JavaScript.
+- **Axios**: Biblioteca para realizar requisições HTTP.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Pré-requisitos
 
-### `npm test`
+Antes de iniciar o desenvolvimento com React, é necessário instalar o Node.js na sua máquina.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### O que é o Node.js?
 
-### `npm run build`
+O Node.js é um ambiente de execução de código JavaScript do lado do servidor (server-side), permitindo a criação de aplicações autossuficientes sem a necessidade de um navegador.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Por que Instalar o Node.js?
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+O React é construído sobre o Node.js, que inclui o npm (Node Package Manager) e o npx (executador de pacotes do Node). O npm gerencia dependências, enquanto o npx executa scripts de build, ambos essenciais para o desenvolvimento com React.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Instruções de Instalação
 
-### `npm run eject`
+1. **Criar um novo projeto React**
+   
+   Use o comando `npx` para criar um novo projeto React sem a necessidade de instalar o Create React App globalmente:
+   
+   ```bash
+   npx create-react-app my-movies
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. **Instalar o React Router**
+   
+   O React Router é necessário para implementar o roteamento interno na aplicação:
+   
+   ```bash
+   npm i react-router-dom
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. **Instalar o Styled Components**
+   
+   Para escrever CSS diretamente dentro dos arquivos JavaScript, utilize o Styled Components:
+   
+   ```bash
+   npm i styled-components
 
-## Learn More
+4. **Instalar o Axios**
+   
+   O Axios é uma biblioteca para fazer requisições HTTP de maneira simples e eficiente:
+   
+   ```bash
+   npm i axios
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Referências
+API TheMovieDB: '[Documentação oficial](https://developer.themoviedb.org/reference/movie-details)'
